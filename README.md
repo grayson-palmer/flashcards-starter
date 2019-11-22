@@ -1,9 +1,5 @@
 # FlashCards Starter Kit
 
-## Fork This Repo
-
-On the top right corner of this page, click the **Fork** button.
-
 ## Setup
 
 Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
@@ -28,52 +24,23 @@ Node server running on port 3000
 
 *Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
 
+---
 
-## Where to Add Your Code
+## Functionality gif
 
-### JavaScript
 
-**Create all of your feature code files in the `src` directory.**
+![flashcards](https://user-images.githubusercontent.com/46653114/69397244-bc344980-0ca2-11ea-961d-03788702e6ad.gif)
 
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
-
-```bash
-node index.js
-```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ---
 
-## Test Files Organization
+## Challenges
 
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
+ -Juggling multiple class files was a challenge at first, but started to feel more comfortable by the end.
+ -Developing for terminal was an interesting new experience, one I would prefer not to repeat...
 
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
 
-## Running Your Tests
+## Wins
 
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
-
----
+ -I was please with how comfortable I felt creating the individual files and tests. Communicating between them was more challenging, but I felt I was able to manage it well by the end of the project.
+ -I am still unsure if I am writing entirely great tests, but I did feel like writing the tests I did was a personal win.
