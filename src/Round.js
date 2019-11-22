@@ -5,6 +5,7 @@ class Round {
     this.deck = deck.cards;
     this.turn = 0;
     this.incorrectGuesses = [];
+    this.time = Date.now();
   }
   returnCurrentCard() {
     return this.deck[this.turn];
@@ -21,9 +22,13 @@ class Round {
     return parseInt(Math.round((this.deck.length - this.incorrectGuesses.length) / this.deck.length * 100));
   }
   endRound() {
+    const min = Math.floor(((Date.now() - this.time) / 1000) / 60);
+    const sec = parseInt(((Date.now() - this.time) / 1000) % 60);
     console.log(`** Round Over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
-    process.exit();
+    console.log(`** Round Time! ** You took ${min} minutes ${sec} seconds to complete!`)
+    // process.exit();
   }
+
 }
 
 module.exports = Round;
