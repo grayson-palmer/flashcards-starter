@@ -26,6 +26,7 @@ class Game {
       questions.push(card);
     }
     const deck = new Deck(questions);
+    deck.shuffleDeck();
     const round = new Round(deck);
     this.currentRound = round;
     this.printMessage(deck, round);
